@@ -17,6 +17,7 @@ typedef struct Heap
   heapElem* heapArray;
   int size;
   int capac;
+  int capacidad;
 } Heap;
 
 
@@ -78,10 +79,9 @@ void heap_pop(Heap* pq)
 }*/
 Heap* createHeap()
 {
-  
   Heap* h= (Heap*) malloc(sizeof(Heap));
-  h->capac=3;
-  h->size=0;
+  h->capacidad=3;
+  h->size=1;
   h->heapArray=(heapElem*) calloc(3,sizeof(heapElem));
-return 0 ;
+return h ;
 }
