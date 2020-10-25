@@ -5,6 +5,7 @@
 #include <ctype.h>
 #include "heap.h"
 
+
 typedef struct nodo
 {
   void* data;
@@ -55,10 +56,32 @@ void heap_pop(Heap* pq)
 
 }
 
+/*Heap* createHeap(int capacity,int heap_type)
+{
+   Heap *h = (Heap * ) malloc(sizeof(Heap)); 
+    if(h == NULL)
+    {
+        printf("Memory Error!");
+        return NULL;
+    }
+    h->heap_type = heap_type;
+    h->count=0;
+    h->capacity = capacity;
+    h->arr = (int *) malloc(capacity*sizeof(int)); 
+
+    if ( h->arr == NULL)
+    {
+      printf("Memory Error!");
+      return NULL;
+    }
+    return h;
+}*/
 Heap* createHeap()
 {
-
   
-
- return NULL;
+  Heap* h= (Heap*) malloc(sizeof(Heap));
+  h->capac=3;
+  h->size=0;
+  h->heapArray=(heapElem*) calloc(3,sizeof(heapElem));
+return 0 ;
 }
