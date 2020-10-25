@@ -84,7 +84,7 @@ Heap* createHeap()
     return 0;
   }*/
   Heap* h= (Heap*) malloc(sizeof(Heap));
-  h->capacidad=3;
+  h->capac=3;
   h->size=0;
   h->heapArray=(heapElem*) calloc(3,sizeof(heapElem));
 
