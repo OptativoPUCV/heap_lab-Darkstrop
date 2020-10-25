@@ -17,7 +17,6 @@ typedef struct Heap
   heapElem* heapArray;
   int size;
   int capac;
-  int capacidad;
 } Heap;
 
 
