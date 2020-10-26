@@ -17,6 +17,10 @@ typedef struct Heap
   heapElem* heapArray;
   int size;
   int capac;
+  /*int *arr;
+  int count;
+  int capacity;
+  int heap_type;*/
 } Heap;
 
 
@@ -52,8 +56,15 @@ void heap_push(Heap* pq, void* data, int priority)
 
 void heap_pop(Heap* pq)
 {
-
-
+  /*
+ int pop;
+    
+    pop = h->arr[0];
+    h->arr[0] = h->arr[h->count-1];
+    h->count--;
+    heapify_top_bottom(h, 0);
+    return pop;
+*/
 
 }
 
