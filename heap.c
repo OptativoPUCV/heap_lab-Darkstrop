@@ -22,12 +22,9 @@ typedef struct Heap
 
 void* heap_top(Heap* pq)
 { 
-  if(pq->size==0) return NULL;
-  
-return NULL;
+  if(pq->size>=1||pq->size<=-1) return NULL;
+  return pq->heapArray[0].data;
 }
-
-
 
 void heap_push(Heap* pq, void* data, int priority)
 {
